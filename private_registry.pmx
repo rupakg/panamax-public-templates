@@ -1,0 +1,18 @@
+---
+name: Private Registry
+description: This will create a private registry and it exposes port 5000.
+keywords: registry
+type: Default
+documentation: |-
+  Private Registry
+  ============
+
+  This will create a private registry and it exposes port 5000.
+images:
+- name: p_registry
+  source: registry:latest
+  type: Default
+  ports:
+  - host_port: '5000'
+    container_port: '5000'
+    proto: TCP
